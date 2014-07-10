@@ -1,0 +1,28 @@
+{
+  "name": "exportResumeToHTML",
+  "version": "0.0.0",
+  "description": "Utility module for Json Resume to export resume to HTML using external themes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anthonyray/exportResumeToHTML.git"
+  },
+  "keywords": [
+    "jsonresume",
+    "json",
+    "resume"
+  ],
+  "author": "Anthony Reinette",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthonyray/exportResumeToHTML/issues"
+  },
+  "homepage": "https://github.com/anthonyray/exportResumeToHTML",
+  "dependencies": {
+    "mkdirp": "^0.5.0",
+    "npmi": "0.0.10"
+  }
+}

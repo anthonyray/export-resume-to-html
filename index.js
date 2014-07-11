@@ -23,7 +23,17 @@ function resumeToHTML(resumeObject, options, callback) {
     if (err) 
       callback(err);
     else {
-      downloadTheme(theme,version,function(){})
+      downloadTheme(theme,version,function(err,themeDirectory){
+        if (err){ // The theme was not downloaded correctly
+          callback(err)
+        }
+        else { // The theme was downloaded correctly
+          runTheme(resumeObject,themeDirectory,function(err,resumehtml){
+            if (err) console.log("Error")
+            else callback(resumehtml);
+          })
+        }
+      });
     }
   })
 };

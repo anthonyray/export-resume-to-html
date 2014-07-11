@@ -1,5 +1,5 @@
 {
-  "name": "exportResumeToHTML",
+  "name": "export-resume-to-html",
   "version": "0.0.0",
   "description": "Utility module for Json Resume to export resume to HTML using external themes",
   "main": "index.js",

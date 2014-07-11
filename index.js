@@ -5,12 +5,7 @@ var npmi = require('npmi');
 
 var themeDir = 'themes';
 
-var resumeObject = JSON.parse(fs.readFileSync('resume.json','utf8'));
-var options = {
-  theme : 'modern'
-}
-
-function resumeToHTML(resumeObject, options, callback) { // Callback (filename)
+function resumeToHTML(resumeObject, options, callback) { 
 
   var theme = 'jsonresume-theme-' + options.theme
   var version = '0';
@@ -69,12 +64,3 @@ function runTheme(resumeObject,themeDirectory,callback){
 
 module.exports = resumeToHTML;
 
-downloadTheme('jsonresume-theme-light','0',function(err,themeDirectory){
-  if (err) console.log("ERROR");
-  else {
-    console.log("OK")
-    runTheme(resumeObject,themeDirectory,function(err,html){
-      console.log(html)
-    })
-  }
-})
